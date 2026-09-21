@@ -1,69 +1,82 @@
-import Image from "next/image";
+import Hero from "@/components/Hero/Hero";
+import Header from "../components/Header/Header";
+import Intro from "@/components/Introduction/Intro";
+import About from "@/components/About/About";
+import ProductCard from "@/components/ProductSection/productcard";
+import ParallaxSection from "@/components/ParallaxSection/parallaxSection";
+import Magazine from "@/components/Magazine/Magazine";
+import Response from "@/components/SocialResponsibility/Response";
+import Footer from "@/components/Footer/Footer";
+const products = [
+  {
+    image: "/Image/52.png",
+    title: "برنج گلستان",
+    subtitle: "معرفی محصول",
+    Tdescription: "رکن اول غذای ایرانی",
+    description:(
+      <> مرغوب‌ترین برنج دنیا، برنج ایران است و بهترین نوع برنج ایرانی،‌ طارم و هاشمی. این برنج‌ها از بهترین شالیزارهای مازندران برداشت شده، پس از كنترل كیفیت در آزمایشگاه‌های تخصصی <span className="text-red-500 text-[16px]">  گلستان</span>  وارد چرخه بسته‌بندی و در وزن‌های مختلف به بازار عرضه می‌شوند. عطر و طعم بی‌نظیر برنج گلستان با هیچ برنج دیگری قابل مقایسه نیست. با گلستان،‌ كیفیت زندگی بالاتر از همیشه است چرا كه مشتریان گلستان؛‌ لایق بهترین‌ها هستند.
+   </>
+    ),
+    button1: "محصولات برنج",
+    button2: "آشپزخانه گلستان",
+  },
+{
+  image: "/Image/52.png",
+  title: "چای گلستان",
+  subtitle: "معرفی محصول",
+  Tdescription: "سابقه ای به قدمت یک عمر",
+
+  description:(
+    <> چای تنها یك نوشیدنی گرم نیست.‌ یک گفتمان است؛‌ گرمابخش وجود و بهانه‌ای برای آغاز یك معاشرت دل‌چسب. بی‌دلیل نیست كه نام «محبوب‌ترین نوشیدنی دنیا» را با خود یدک می‌كشد. نوشیدنش خستگی‌ها را فراری داده،‌ حس خوب آرامش را به همراه دارد.
+        برای مردمان ایران زمین نام <span className="text-red-500 text-[16px]">  گلستان</span> با چای پیوند خورده است؛‌ قدیمی‌ترین محصول مجموعه گلستان،‌ با مدرن‌ترین و بهداشتی‌ترین دستگاه‌های روز دنیا تهیه و بسته‌بندی می‌شود. چیزی كه باعث شده مشتریانش یك عمر به نام <span className="text-red-500 text-[16px]">  گلستان</span> اعتماد كنند، كیفیت، ‌عطر و طعم به یادماندنی آن است.  </>
+  ),
+
+  button1: "محصولات چای"
+},
+  {
+    image: "/Image/52.png",
+    title: "پسته گلستان",
+    subtitle: "معرفی محصول",
+    Tdescription:" آجيل‌های خوش خنده",
+    description: (
+      <>
+      
+        خواص فوق‌العاده پسته بر كسی پوشیده نیست. پسته را منبع ویتامین و مواد معدنی می‌نامند، یك پمپ خون‌ساز قوی و تسكین دهنده قلب و اعصاب.
+       پسته گلستان اما حسابش از دیگر پسته‌های بازار جداست. مرغوب‌ترین پسته خام از بهترین باغ‌های پسته ایران دستچین می‌شود.‌ پس از كنترل كیفیت در آزمایشگاه و اطمینان از سلامت محصول،‌ با زعفران درجه یک و نمک، بوداده و برشته شده و‌<span className="text-red-500 text-[16px]"> پسته گلستان</span> را با طعم و رنگ و عطری بی‌نظیر به ارمغان می‌آورد.   
+      </>
+    ),
+   
+    button2: "ناتس گلستان",
+  },
+];
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.js
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+    <main className="w-[84%] mx-auto flex flex-col relative shadow-[0_0_10px_rgb(230,229,229)] bg-[url('/Image/recipe-baner-1.png')] bg-fixed bg-contain bg-white">
+      <Header />
+      <Hero />
+      <Intro />
+      <About />
+      <div>
+        {products.map((product) => (
+          <ProductCard
+            key={product.title}
+            image={product.image}
+            title={product.title}
+            subtitle={product.subtitle}
+            Tdescription={product.Tdescription}
+            description={product.description}
+            button1={product.button1}
+            button2={product.button2}
+          />
+        ))}
+      </div>
+      <ParallaxSection/>
+      <Magazine/>
+      <Response/>
+      <Footer/>
+   
+
+    </main>
   );
 }
