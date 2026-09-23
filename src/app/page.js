@@ -82,8 +82,8 @@ export default function Home() {
     >
       <Header />
       <Hero />
-      {/* <Up /> */}
-      <Intro />
+      <Up />
+      
       <About />
       <div>
         {products.map((product) => (
