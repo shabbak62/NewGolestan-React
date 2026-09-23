@@ -1,14 +1,11 @@
 @import "tailwindcss";
 @plugin "daisyui";
-@import 'animate.css';
+@import "animate.css";
 
 @font-face {
   font-family: "iransans";
   src: url("/font/IRANSansWeb-Light.woff2") format("woff2");
-
 }
-
-
 
 body {
   font-family: "iransans", sans-serif;
