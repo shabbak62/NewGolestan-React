@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useEffect, useState } from "react";
@@ -34,9 +33,28 @@ const UP = () => {
       {showButton && (
         <button
           onClick={backToTop}
-          className="fixed bottom-5 left-12.5 w-10 h-10 rounded-xl bg-[#848f9bc4] text-white text-[24px] shadow-2xl shadow-gray-600 transition-all duration-300"
+          className="
+          z-50  
+          fixed
+            bottom-4 left-4
+            sm:bottom-5 sm:left-6
+            md:left-8
+            lg:left-12.5
+            w-9 h-9
+            sm:w-10 sm:h-10
+            rounded-xl
+            bg-[#848f9bc4]
+            text-white
+            text-[20px]
+            sm:text-[24px]
+            flex items-center justify-center
+            shadow-2xl shadow-gray-600
+            transition-all duration-300
+            hover:bg-[#6f7a86]
+            hover:scale-110
+          "
         >
-        ↑
+          ↑
         </button>
       )}
     </>

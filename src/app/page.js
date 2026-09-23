@@ -77,7 +77,7 @@ const products = [
 export default function Home() {
   return (
     <main
-      className="w-[84%] mx-auto flex flex-col relative shadow-[0_0_10px_rgb(230,229,229)] bg-fixed bg-contain bg-white"
+      className="md:w-[84%] w-full mx-auto flex flex-col relative shadow-[0_0_10px_rgb(230,229,229)] bg-fixed bg-contain bg-white"
       style={{ backgroundImage: `url(${basePath}/Image/recipe-baner-1.png)` }}
     >
       <Header />
