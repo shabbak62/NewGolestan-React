@@ -1,12 +1,12 @@
 /** @type {import('next').NextConfig} */
-const isProd = process.env.NODE_ENV === "production";
+const base = process.env.NEXT_BASE_PATH || "";
 
 const nextConfig = {
   output: "export",
-  basePath: isProd ? "/NewGolestan-React" : "",
+  basePath: base,
   images: { unoptimized: true },
   env: {
-    BASE_PATH: isProd ? "/NewGolestan-React" : "",
+    BASE_PATH: base,
   },
 };
 
