@@ -82,7 +82,7 @@ export default function Home() {
     >
       <Header />
       <Hero />
-      <Up />
+      {/* <Up /> */}
       <Intro />
       <About />
       <div>
