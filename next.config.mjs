@@ -1,8 +1,13 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === "production";
+
 const nextConfig = {
   output: "export",
-  basePath: "/NewGolestan-React",
+  basePath: isProd ? "/NewGolestan-React" : "",
   images: { unoptimized: true },
+  env: {
+    BASE_PATH: isProd ? "/NewGolestan-React" : "",
+  },
 };
 
-module.exports = nextConfig;
+export default nextConfig;

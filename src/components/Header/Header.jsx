@@ -26,8 +26,9 @@ const Header = () => {
               <span className="megamenu-active"></span>
               <button className="hover:text-white p-4">صفحه اصلی</button>
               <div className="w-px h-6 bg-gray-600 m-4 "></div>
-              <button className="hover:text-white p-4">شرکت گلستان
-                   <span className="text-[9px] text-gray-500 p-2">▼</span>
+              <button className="hover:text-white p-4">
+                شرکت گلستان
+                <span className="text-[9px] text-gray-500 p-2">▼</span>
               </button>
               <div>
                 <div className="flex max-sm:flex-col items-start"></div>
@@ -67,8 +68,9 @@ const Header = () => {
               <div className="w-px h-6 bg-gray-600 m-3"></div>
               <button className="p-4 hover:text-white">استخدام</button>
               <div className="w-px h-6 bg-gray-600 m-3"></div>
-              <button className="hover:text-white">تماس با ما 
-                   <span className="text-[9px] text-gray-500 p-2">▼</span>
+              <button className="hover:text-white">
+                تماس با ما
+                <span className="text-[9px] text-gray-500 p-2">▼</span>
               </button>
               <div className="w-px h-6 bg-gray-600 m-3"></div>
               <button className="p-4 hover:text-white"> EN </button>

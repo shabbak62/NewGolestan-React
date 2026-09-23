@@ -1,5 +1,4 @@
-import "/globals.css";
-
+import "./globals.css";
 
 export const metadata = {
   title: "وب سایت رسمی گلستان",
@@ -8,10 +7,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html
-      lang="fa"
-      dir="rtl"
-    >
+    <html lang="fa" dir="rtl">
       <body className="flex flex-col bg-gray-200">{children}</body>
     </html>
   );
