@@ -36,10 +36,8 @@ const UP = () => {
           className="
           z-50  
           fixed
-            bottom-4 left-4
-            sm:bottom-5 sm:left-6
-            md:left-8
-            lg:left-12.5
+            bottom-4 left-10
+            md:left-12.5
             w-9 h-9
             sm:w-10 sm:h-10
             rounded-xl
