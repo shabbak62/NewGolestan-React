@@ -5,13 +5,15 @@ const Header = () => {
   const [productsOpen, setProductsOpen] = useState(false);
   return (
     <div className="w-full mx-auto sticky top-0 z-10">
-      <div className="w-full h-25 bg-fixed bg-repeat bg-auto top-0 mx-auto"
-       style= {{backgroundImage: `url(${basePath}/Image/header-back.png)`}}>
+      <div
+        className="w-full h-25 bg-fixed bg-repeat bg-auto top-0 mx-auto"
+        style={{ backgroundImage: `url(${basePath}/Image/header-back.png)` }}
+      >
         <div className="navbar shadow-sm">
           <div className="navbar-start">
             <img
               className="ms-50"
-               src={`${basePath}/Image/logo-fr.png`}
+              src={`${basePath}/Image/logo-fr.png`}
               alt="Golestan"
               width={140}
               height={90}
@@ -47,7 +49,12 @@ const Header = () => {
                 </button>
 
                 {productsOpen && (
-                  <div className="absolute top-full right-0 w-30 bg-[url('/Image/header-back.png')]">
+                  <div
+                    className="absolute top-full right-0 w-30"
+                    style={{
+                      backgroundImage: `url(${basePath}/Image/header-back.png)`,
+                    }}
+                  >
                     <ul className="menu-vertical text-gray-200 p-5 gap-4 text-[13px]">
                       <li>برنج</li>
                       <li>چای</li>

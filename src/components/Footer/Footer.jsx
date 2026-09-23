@@ -5,45 +5,68 @@ const Footer = () => {
       <div className="w-full h-22.5 bg-[linear-gradient(to_top_right,#FBFBFB,#D2D2D2)] flex justify-center items-center ">
         <a
           href="www.facebook.com"
-          className="leading-1.25 hover:[content:url('/image/icon5-1-1.png')]"
+          className={`leading-1.25 ${
+            basePath
+              ? "hover:[content:url('/NewGolestan-React/Image/icon5-1-1.png')]"
+              : "hover:[content:url('/Image/icon5-1-1.png')]"
+          }`}
         >
-          <img src="/image/icon5-1.png" alt="" />
+          <img src={`${basePath}/Image/icon5-1.png`} alt="" />
         </a>
         <a
           href=""
-          className="leading-1.25 hover:[content:url('/image/icon4-1-1.png')]"
+          className={`leading-1.25 ${
+            basePath
+              ? "hover:[content:url('/NewGolestan-React/Image/icon4-1-1.png')]"
+              : "hover:[content:url('/Image/icon4-1-1.png')]"
+          }`}
         >
-          <img src="/image/icon4-1.png" alt="" />
+          <img src={`${basePath}/Image/icon4-1.png`} alt="" />
         </a>
         <a
           href=""
-          className="leading-1.25 hover:[content:url('/image/icon3-1-1.png')]"
+          className={`leading-1.25 ${
+            basePath
+              ? "hover:[content:url('/NewGolestan-React/Image/icon3-1-1.png')]"
+              : "hover:[content:url('/Image/icon3-1-1.png')]"
+          }`}
         >
-          <img src="/image/icon3-1.png" alt="" />
+          <img src={`${basePath}/Image/icon3-1.png`} alt="" />
         </a>
         <a
           href=""
-          className="leading-1.25 hover:[content:url('/image/icon2-1.png')]"
+          className={`leading-1.25 ${
+            basePath
+              ? "hover:[content:url('/NewGolestan-React/Image/icon2-1.png')]"
+              : "hover:[content:url('/Image/icon2-1.png')]"
+          }`}
         >
-          <img src="/image/icon2-1-1.png" alt="" />
+          <img src={`${basePath}/Image/icon2-1-1.png`} alt="" />
         </a>
         <a
           href=""
-          className="leading-1.25 hover:[content:url('/image/icon1-1.png')]"
+          className={`leading-1.25 ${
+            basePath
+              ? "hover:[content:url('/NewGolestan-React/Image/icon1-1.png')]"
+              : "hover:[content:url('/Image/icon1-1.png')]"
+          }`}
         >
-          <img src="/image/icon1-1-1.png" alt="" />
+          <img src={`${basePath}/Image/icon1-1-1.png`} alt="" />
         </a>
         <a
           href=""
           className="leading-1.25 hover:[content:url('/image/icon6-1-3.png')]"
         >
-          <img src="/image/icon6-1-2.png" alt="" />
+          <img src={`${basePath}/Image/icon6-1-2.png`} alt="" />
         </a>
       </div>
 
       <div className="w-full h-6.25 bg-[#ff0000]"></div>
 
-      <div className="w-full h-100 bg-[url('/Image/header-back.png')] bg-fixed bg-repeat bg-auto flex flex-nowrap justify-center items-center">
+      <div
+        className="w-full h-100 bg-fixed bg-repeat bg-auto flex flex-nowrap justify-center items-center"
+        style={{ backgroundImage: `url(${basePath}/Image/header-back.png)` }}
+      >
         <div className="w-[10%] h-92.5 flex flex-col justify-center items-center gap-1.25">
           <img className="w-[70%]" src={`${basePath}/Image/1.png`} alt="" />
           <h3 className="w-[90%] text-[#ffffff] border-y border-y-[#bcbec0] mt-6 mb-6 p-2.5 text-center text-[16px]">
