@@ -97,7 +97,7 @@ const Header = () => {
             </div>
           </div>
 
-          {/* منوی موبایل - ساده و بدون megamenu */}
+          {/* منوی موبایل - ساده و بدون megamenu
           {mobileMenuOpen && (
             <div className="w-full sm:hidden bg-black/90 flex flex-col text-gray-200 text-[13px]">
               {menuItems.map((item) => (
@@ -109,7 +109,7 @@ const Header = () => {
                 </button>
               ))}
             </div>
-          )}
+          )} */}
 
           <div className="navbar-end"></div>
         </div>
