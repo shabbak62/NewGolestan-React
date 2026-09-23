@@ -1,3 +1,4 @@
+import { basePath } from "@/lib/basePath";
 const Footer = () => {
   return (
     <div>
@@ -44,7 +45,7 @@ const Footer = () => {
 
       <div className="w-full h-100 bg-[url('/Image/header-back.png')] bg-fixed bg-repeat bg-auto flex flex-nowrap justify-center items-center">
         <div className="w-[10%] h-92.5 flex flex-col justify-center items-center gap-1.25">
-          <img className="w-[70%]" src="/Image/1.png" alt="" />
+          <img className="w-[70%]" src={`${basePath}/Image/1.png`} alt="" />
           <h3 className="w-[90%] text-[#ffffff] border-y border-y-[#bcbec0] mt-6 mb-6 p-2.5 text-center text-[16px]">
             چای گلستان
           </h3>
@@ -61,7 +62,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="w-[10%] h-92.5 flex flex-col justify-center items-center gap-1.25">
-          <img className="w-[70%]" src="/Image/2.png" alt="" />
+          <img className="w-[70%]" src={`${basePath}/Image/2.png`} alt="" />
           <h3 className="w-[90%] text-[#ffffff]  border-y border-y-[#bcbec0] mt-6 mb-6 p-2.5 text-center text-[16px]">
             تی بگ گلستان
           </h3>
@@ -78,7 +79,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="w-[10%] h-92.5 flex flex-col justify-center items-center gap-1.25">
-          <img className="w-[70%]" src="/Image/3.png" alt="" />
+          <img className="w-[70%]" src={`${basePath}/Image/3.png`} alt="" />
           <h3 className="w-[90%] text-[#ffffff]  border-y border-y-[#bcbec0] mt-6 mb-6 p-2.5 text-center text-[16px]">
             ادویه گلستان
           </h3>
@@ -95,7 +96,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="w-[10%] h-92.5 flex flex-col justify-center items-center gap-1.25">
-          <img className="w-[70%]" src="/Image/4.png" alt="" />
+          <img className="w-[70%]" src={`${basePath}/Image/4.png`} alt="" />
 
           <h3 className="w-[90%] text-[#ffffff]  border-y border-y-[#bcbec0] mt-6 mb-6 p-2.5 text-center text-[16px]">
             حبوبات گلستان

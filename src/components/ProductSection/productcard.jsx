@@ -1,3 +1,4 @@
+import { basePath } from "@/lib/basePath";
 const ProductCard = ({image,title,subtitle,Tdescription,description,button1,button2}) => {
     return (
         <div>

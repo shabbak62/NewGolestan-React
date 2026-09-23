@@ -1,16 +1,17 @@
 "use client";
-
+import { basePath } from "@/lib/basePath";
 import { useState } from "react";
 const Header = () => {
   const [productsOpen, setProductsOpen] = useState(false);
   return (
     <div className="w-full mx-auto sticky top-0 z-10">
-      <div className="w-full h-25 bg-[url('/Image/header-back.png')] bg-fixed bg-repeat bg-auto top-0 mx-auto">
+      <div className="w-full h-25 bg-fixed bg-repeat bg-auto top-0 mx-auto"
+       style= {{backgroundImage: `url(${basePath}/Image/header-back.png)`}}>
         <div className="navbar shadow-sm">
           <div className="navbar-start">
             <img
               className="ms-50"
-              src="/Image/logo-fr.png"
+               src={`${basePath}/Image/logo-fr.png`}
               alt="Golestan"
               width={140}
               height={90}

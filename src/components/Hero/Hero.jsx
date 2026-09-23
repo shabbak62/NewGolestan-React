@@ -1,3 +1,4 @@
+import { basePath } from "@/lib/basePath";
 const Hero = () => {
     return ( 
         <div className="w-full h-114.25 py-12.5 px-60 flex justify-between items-center bg-[linear-gradient(190deg,#FBFBFB_0%,#D2D2D2_100%)] bg-[linear-gradient(190deg,#FBFBFB_0%,#D2D2D2_100%)]">
@@ -14,7 +15,7 @@ const Hero = () => {
                <div className="w-[40%] h-full">
                  <img
                 alt="tea"
-                src="/Image/tea-pic1.png"
+                src={`${basePath}/Image/tea-pic1.png`}
                 className="animate__animated animate__slideInDown animate__slower animate__delay-0.7s z-1 relative"
                 />
                </div>

@@ -1,3 +1,4 @@
+import { basePath } from "@/lib/basePath";
 import Hero from "@/components/Hero/Hero";
 import Header from "@/components/Header/Header";
 import Up from "@/components/up/Up";
@@ -10,7 +11,7 @@ import Response from "@/components/SocialResponsibility/Response";
 import Footer from "@/components/Footer/Footer";
 const products = [
   {
-    image: "/Image/52.png",
+    image: `${basePath}/Image/52.png`,
     title: "برنج گلستان",
     subtitle: "معرفی محصول",
     Tdescription: "رکن اول غذای ایرانی",
@@ -30,7 +31,7 @@ const products = [
     button2: "آشپزخانه گلستان",
   },
   {
-    image: "/Image/22.png",
+    image: `${basePath}/Image/22.png`,
     title: "چای گلستان",
     subtitle: "معرفی محصول",
     Tdescription: "سابقه ای به قدمت یک عمر",
@@ -53,7 +54,7 @@ const products = [
     button1: "محصولات چای",
   },
   {
-    image: "/Image/pest.png",
+    image: `${basePath}/Image/pest.png`,
     title: "پسته گلستان",
     subtitle: "معرفی محصول",
     Tdescription: " آجيل‌های خوش خنده",
@@ -75,7 +76,10 @@ const products = [
 
 export default function Home() {
   return (
-    <main className="w-[84%] mx-auto flex flex-col relative shadow-[0_0_10px_rgb(230,229,229)] bg-[url('/Image/recipe-baner-1.png')] bg-fixed bg-contain bg-white">
+    <main
+      className="w-[84%] mx-auto flex flex-col relative shadow-[0_0_10px_rgb(230,229,229)] bg-fixed bg-contain bg-white"
+      style={{ backgroundImage: `url(${basePath}/Image/recipe-baner-1.png)` }}
+    >
       <Header />
       <Hero />
       <Up />
