@@ -137,7 +137,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="w-full h-25 bg-[url('/Image/header-back.png')] bg-fixed bg-repeat bg-auto pt-6">
+      <div
+        className="w-full h-25 bg-fixed bg-repeat bg-auto pt-6"
+        style={{ backgroundImage: `url(${basePath}/Image/header-back.png)` }}
+      >
         <p className="text-[#bcbec0] text-[13px] text-center leading-4.5 tracking-[2px]">
           All Right Reserved ShABBAK Company 2026-2026
           <br />
