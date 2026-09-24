@@ -10,7 +10,7 @@ const ProductCard = ({
 }) => {
   return (
     <div>
-      <div className="card w-full h-auto sm:h-142.5 bg-white relative">
+      <div className="w-full h-auto sm:h-142.5 bg-white relative">
         <div className="w-full h-auto sm:h-130 bg-[#c9cf93]">
           <img
             className="w-full h-[220px] sm:h-[320px] lg:h-125 object-cover"
