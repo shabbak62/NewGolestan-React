@@ -45,7 +45,7 @@ const Header = () => {
               className="ms-2 sm:ms-10 megamenu megamenu-full text-gray-400 text-[12px] sm:text-[14px]"
               id="my-megamenu-4"
             >
-              <span className=""></span>
+              <span className="megamenu-active"></span>
               <button className="hover:text-white p-2 sm:p-4">صفحه اصلی</button>
               <div className="w-px h-6 bg-gray-600 m-2 sm:m-4"></div>
               <button className="hover:text-white p-2 sm:p-4">
@@ -97,7 +97,7 @@ const Header = () => {
             </div>
           </div>
 
-          منوی موبایل - ساده و بدون megamenu
+          {/* منوی موبایل - ساده و بدون megamenu */}
           {mobileMenuOpen && (
             <div className="w-full sm:hidden bg-black/90 flex flex-col text-gray-200 text-[13px]">
               {menuItems.map((item) => (
